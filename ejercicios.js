@@ -85,22 +85,53 @@
 // Ejercicio 11
 // Cada <li> tiene un botón "Eliminar".
 // Al hacer clic en el botón, se borra el <li>.
-let botones = document.querySelectorAll("button");
-botones.forEach(nodo => {
-    nodo.addEventListener("click", () => {
-    let padreBoton = nodo.parentElement;
-    let padreLi = padreBoton.parentElement
-    padreLi.removeChild(padreBoton);
-    })
-});
+// let botones = document.querySelectorAll("button");
+// botones.forEach(nodo => {
+//     nodo.addEventListener("click", () => {
+//     let padreBoton = nodo.parentElement;
+//     let padreLi = padreBoton.parentElement
+//     padreLi.removeChild(padreBoton);
+//     })
+// });
 // Ejercicio 12
-
+// Un botón agrega un <div> con texto.Otro botón elimina el último <div> agregado.
+// let botonAgregar = document.getElementById("agregar");
+// let botonEliminar = document.getElementById("eliminar");
+// let body = document.querySelector("body");
+// botonAgregar.addEventListener("click", () => {
+//     let nuevoDiv = document.createElement("div");
+//     let nuevoP = document.createElement("p");
+//     nuevoP.textContent = "Me creo el puto jesus";
+//     nuevoDiv.appendChild(nuevoP);
+//     body.appendChild(nuevoDiv);
+// })
+// botonEliminar.addEventListener("click", () =>{
+//     let ultimoHijo = body.lastElementChild;
+//     if (ultimoHijo != botonEliminar && ultimoHijo != botonAgregar) {
+//         body.removeChild(ultimoHijo);
+//     }
+// })
 // Ejercicio 13
-
+// let p = document.querySelector("p");
+// p.addEventListener("click", () => {
+//     p.classList.toggle("resaltado");
+// });
 // Ejercicio 14
-
+// Cada clic en el botón duplica el texto del <p>.
+// let duplicador = document.querySelector("button");
+// let p = document.querySelector("p");
+// duplicador.addEventListener("click", () => {
+//     let texto = p.textContent;
+//     p.insertAdjacentText("beforeend", texto);
+// });
 // Ejercicio 15
-
+// Cambiar el fondo de la página entre blanco y negro con un botón
+// let boton = document.querySelector("button");
+// boton.addEventListener("click", () => {
+//     let body = document.querySelector("body");
+//     // Si el fondo es blanco o no tiene un fondo asignado, cambiarlo a negro, si es negro, a blanco
+//     body.style.backgroundColor = (body.style.backgroundColor === "white" || body.style.backgroundColor === "") ? "black" : "white";
+// });
 // Ejercicio 16
 
 // Ejercicio 17
