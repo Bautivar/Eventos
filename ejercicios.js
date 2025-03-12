@@ -133,13 +133,51 @@
 //     body.style.backgroundColor = (body.style.backgroundColor === "white" || body.style.backgroundColor === "") ? "black" : "white";
 // });
 // Ejercicio 16
+// Alternar la visibilidad del <p>.
+// let boton = document.querySelector("button");
+// boton.addEventListener("click",()=>{
+//     let p = document.querySelector("p");
+//     p.style.display = (p.style.display === "block" || p.style.display === "inline" ) ? "none" :"block";
+// })
 
 // Ejercicio 17
-
+// Un botón crea nuevos botones.Cada botón nuevo muestra un mensaje al hacer clic.
+// let botonCreador = document.querySelector("button");
+// let h1 = document.createElement("h1");
+// h1.textContent = "CONTENEDOR DE CAJAS";
+// botonCreador.addEventListener("click" , () => {
+//     let nuevoBoton = document.createElement("button");
+//     nuevoBoton.textContent = "Soy un boton creado";
+//     nuevoBoton.addEventListener("click",() =>{
+//         alert("Mensajito del alert");
+//     });
+//     let div = document.querySelector("div");
+//     div.appendChild(nuevoBoton);
+//     div.style.margin = "20px 0";
+//     div.style.backgroundColor = "red";
+//     div.insertAdjacentElement("beforebegin",h1);
+// });
 // Ejercicio 18
-
+// Un botón aumenta el tamaño del texto de un <p>
+// let agrandador = document.querySelector("button");
+// let texto = document.querySelector("p");
+// agrandador.addEventListener("click",()=>{
+//     let font = texto.style.fontSize.value;
+//     console.log(font);
+// });
 // Ejercicio 19
-
+// Al hacer clic, el número baja de 10 a 0.Cuando llegue a 0, mostrar "¡Fin!".
+let boton = document.querySelector("button");
+let regresiva = document.querySelector("p");
+let contador = regresiva.textContent;
+boton.addEventListener("click",() =>{
+    if (contador > 0) {
+        regresiva.textContent = contador;
+        contador--;
+    }else{
+        regresiva.textContent = "FIN";
+    }
+});
 // Ejercicio 20
 
 // Ejercicio 21
