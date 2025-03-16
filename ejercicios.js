@@ -167,23 +167,69 @@
 // });
 // Ejercicio 19
 // Al hacer clic, el número baja de 10 a 0.Cuando llegue a 0, mostrar "¡Fin!".
-let boton = document.querySelector("button");
-let regresiva = document.querySelector("p");
-let contador = regresiva.textContent;
-boton.addEventListener("click",() =>{
-    if (contador > 0) {
-        regresiva.textContent = contador;
-        contador--;
-    }else{
-        regresiva.textContent = "FIN";
-    }
-});
+// let boton = document.querySelector("button");
+// let regresiva = document.querySelector("p");
+// let contador = regresiva.textContent;
+// boton.addEventListener("click",() =>{
+//     if (contador > 0) {
+//         regresiva.textContent = contador;
+//         contador--;
+//     }else{
+//         regresiva.textContent = "FIN";
+//     }
+// });
 // Ejercicio 20
+// Cada clic en el botón agrega "Elemento X" a la <ul>.
+// let agregar = document.querySelector("button");
+// let lista = document.querySelector("ul");
+// let i = 0;
+// agregar.addEventListener("click",() => {
+//     let nuevoElemento = document.createElement("p");
+//     nuevoElemento.textContent = "Elemento " + i;
 
+//     let boton = document.createElement("button");
+//     boton.textContent = "Delete";
+
+//     nuevoElemento.insertAdjacentElement("beforeend",boton);
+
+//     lista.appendChild(nuevoElemento);
+
+//     i++;
+//     boton.addEventListener("click",() => {
+//         lista.removeChild(nuevoElemento);
+//     })
+// })
 // Ejercicio 21
-
+// Un solo botón cambia el color de fondo de varios <div>.
+// let divs = document.querySelectorAll("div");
+// let boton = document.querySelector("button");
+// let clases = ["chocolate","oscuro","rojo"];
+// let indiceColores = 0;
+// boton.addEventListener("click", () => {
+//     divs.forEach(div => {
+//         let clase = div.getAttribute("class");
+//         div.classList.remove(clase);
+//         div.classList.add(clases[indiceColores]);
+//     });
+//     // Esto nos avisa que sube a uno y cuando el numero es igual al padre, lo divide y queda en el resto, que seria 0
+//     indiceColores = (indiceColores + 1) % clases.length;
+// });
 // Ejercicio 22
-
+// Al hacer clic en el botón "Agregar Tarjeta", se añade un nuevo <div> con texto y un botón "Eliminar". Al hacer clic en el botón "Eliminar", se elimina solo esa tarjeta.
+// let agregarTarjetas = document.querySelector("button");
+// let padreDiv = document.querySelector("div");
+// agregarTarjetas.addEventListener("click", () => {
+//     let nuevoDiv = document.createElement("div");
+//     let nuevoP = document.createElement("p");
+//     let botonBorrar = document.createElement("button");
+//     botonBorrar.textContent = "BORRAR";
+//     nuevoP.textContent = "Cajita";
+//     nuevoDiv.appendChild(nuevoP).insertAdjacentElement("beforeend",botonBorrar);
+//     padreDiv.appendChild(nuevoDiv);
+//     botonBorrar.addEventListener("click",() => {
+//         padreDiv.removeChild(nuevoDiv);
+//     });
+// });
 // Ejercicio 23
 
 // Ejercicio 24
