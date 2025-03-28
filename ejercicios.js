@@ -231,15 +231,58 @@
 //     });
 // });
 // Ejercicio 23
+// Un solo botón alterna la visibilidad de todos los párrafos de una sección. Si están ocultos, se muestran; si están visibles, se ocultan.
+// let botonOcultarMostrar = document.querySelector("button");
+// let parrafos = document.querySelectorAll("section p");
 
+// botonOcultarMostrar.addEventListener("click",() =>{
+//     parrafos.forEach(parrafo => {
+//         parrafo.classList.toggle("ocultar");
+//     });
+// });
 // Ejercicio 24
-
+// Un botón cambia la imagen entre "imagen1.jpg" y "imagen2.jpg".Si es "imagen1.jpg", cambiar a "imagen2.jpg" y viceversa.
+// let img = document.querySelector("img");
+// let botonCambiarImagen = document.querySelector("button");
+// botonCambiarImagen.addEventListener("click",() =>{
+//     if (imagen.src.includes("imagen1.jpg")) {
+//         img.src = "imagen2.jpg";
+//     }else{
+//         img.src = "imagen1.jpg";
+//     }
+// });
 // Ejercicio 25
-
+// Al hacer clic en un botón, resaltar en amarillo los elementos pares y en azul los impares de una lista.
+// let botonResaltar = document.querySelector("button");
+// let listaDesordenada = document.querySelector("ul");
+// let hijos = listaDesordenada.querySelectorAll("li");
+// botonResaltar.addEventListener("click", () => {
+//     let acumuladorHijos = 1;
+//     hijos.forEach(hijo => {
+//         if (acumuladorHijos % 2 === 0) {
+//             hijo.style.color = "blue"
+//         }else{
+//             hijo.style.color = "yellow";
+//         }
+//         acumuladorHijos++;
+//     });
+// });
 // Ejercicio 26
+// Un botón añade un nuevo <li> a la lista. Otro botón elimina el primer elemento de la lista.
+// const listaOrdenada = document.querySelector("ul");
+// const botonAgregar = document.querySelector("button#agregarElemento");
+// const botonEliminar = document.querySelector("button#eliminarElemento");
 
+// botonAgregar.addEventListener("click", () =>{
+//     let li = document.createElement("li");
+//     li.textContent = "Elemento " + (listaOrdenada.children.length + 1) ;
+//     listaOrdenada.appendChild(li);
+// });
+// botonEliminar.addEventListener("click", () =>{
+//     listaOrdenada.removeChild(listaOrdenada.firstElementChild);
+// });
 // Ejercicio 27
-
+// l hacer clic en el botón, cambiar la clase de todos los div con clase "caja".Si tienen "activo", quitarla; si no la tienen, agregarla.
 // Ejercicio 28
 
 // Ejercicio 29
@@ -249,3 +292,10 @@
 // Ejercicio 31
 
 // Ejercicio 32
+// Al hacer clic dentro de un div, mostrar las coordenadas del clic.
+// const div = document.querySelector("div");
+// const p = document.querySelector("p");
+// div.style.backgroundColor = "gold";
+// div.addEventListener("click", (e) => 
+//     p.textContent = `Eje X = ${e.clientX} - Eje Y = ${e.clientY}`
+// );
